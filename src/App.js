@@ -1,29 +1,19 @@
 import './App.css';
-import Form from './components/pages/form';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Org from './components/pages/org';
 
 function App() {
   return (
-    <div className="Appl">
-      <header className="App-headerl">
-        {/* <h1>Speed Logistics</h1> */}
-        {/* <h6>-on time delivery</h6> */}
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        {/* <InputForm/> */}
-        
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-        <Form/>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Org} />
+        {/* <Route path="/updateStatus"><FormSec/></Route> */}
+      </Switch>
+    </Router>
   );
 }
 
