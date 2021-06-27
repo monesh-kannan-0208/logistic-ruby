@@ -127,8 +127,10 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
+  background-image: url("./img/truck.png");
+  background-size:cover; 
   color: #777;
-  background: #4CAF50;
+  /* background: #4CAF50; */
 }
 
 .container {
@@ -251,4 +253,13 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number]{
+  -moz-appearance: textfield;
 }
